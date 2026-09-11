@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "tsc --noEmit"
+  },
+  "author": "Mamun Ahmed <mamunahmed24.ma@gmail.com>",
+  "engines": {
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",

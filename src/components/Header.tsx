@@ -119,13 +119,13 @@ export const Header: React.FC = () => {
               className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-md py-1 shrink-0"
             >
               {/* Official Client Trading Emblem */}
-              <div className="relative w-11 h-11 flex items-center justify-center shrink-0">
+              <div className="relative h-11 w-auto max-w-[54px] flex items-center justify-center shrink-0">
                 <Image
-                  src="/images/logo-emblem.png"
+                  src="/images/logo-vvg-symbol.png"
                   alt="Vision Vibe Global Official Logo"
-                  width={44}
-                  height={44}
-                  className="w-full h-full object-contain filter drop-shadow-[0_2px_10px_rgba(29,78,216,0.35)] group-hover:scale-105 transition-transform duration-200"
+                  width={48}
+                  height={40}
+                  className="h-full w-auto object-contain filter drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)] group-hover:scale-105 transition-transform duration-200"
                   priority
                 />
               </div>

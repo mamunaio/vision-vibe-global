@@ -81,12 +81,20 @@ export default function ContactPage() {
                       <span className="text-xs font-semibold uppercase tracking-wider text-ink-primary block">
                         Central Commercial Inquiries
                       </span>
-                      <a
-                        href="mailto:trade@visionvibeglobal.com"
-                        className="text-brand-blue hover:underline font-mono text-xs"
-                      >
-                        trade@visionvibeglobal.com
-                      </a>
+                      <div className="flex flex-col gap-0.5">
+                        <a
+                          href="mailto:trade@visionvibeglobal.com"
+                          className="text-brand-blue hover:underline font-mono text-xs"
+                        >
+                          trade@visionvibeglobal.com
+                        </a>
+                        <a
+                          href="mailto:mamunahmed24.ma@gmail.com"
+                          className="text-brand-blue hover:underline font-mono text-xs"
+                        >
+                          mamunahmed24.ma@gmail.com
+                        </a>
+                      </div>
                     </div>
                   </div>
 
