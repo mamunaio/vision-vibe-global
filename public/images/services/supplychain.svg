@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <rect width="400" height="260" fill="#F0F4F8"/>
+  <rect x="20" y="20" width="360" height="220" fill="#FFFFFF" stroke="#E2E8F0" rx="4"/>
+  <!-- Supply Chain Resilience Route graphic -->
+  <g transform="translate(40, 50)">
+    <circle cx="40" cy="80" r="18" fill="#1D4ED8"/>
+    <text x="40" y="84" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="8" font-weight="600" text-anchor="middle">Ports</text>
+
+    <circle cx="130" cy="40" r="18" fill="#0B1622"/>
+    <text x="130" y="44" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="8" font-weight="600" text-anchor="middle">Air</text>
+
+    <circle cx="210" cy="110" r="18" fill="#C5A880"/>
+    <text x="210" y="114" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="8" font-weight="600" text-anchor="middle">Hubs</text>
+
+    <circle cx="290" cy="60" r="18" fill="#1D4ED8"/>
+    <text x="290" y="64" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="8" font-weight="600" text-anchor="middle">Retail</text>
+
+    <path d="M 58 80 L 112 40 L 192 110 L 272 60" fill="none" stroke="#1D4ED8" stroke-width="2.5" stroke-dasharray="4,4"/>
+  </g>
+  <text x="200" y="210" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Multi-Tier Sourcing, Logistics & Risk Mitigation</text>
+</svg>

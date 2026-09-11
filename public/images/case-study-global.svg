@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="caseBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1C2B"/>
+      <stop offset="50%" stop-color="#132235"/>
+      <stop offset="100%" stop-color="#0B1622"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#caseBg)"/>
+  
+  <!-- Global interconnected logistics lines -->
+  <g stroke="#1E334D" stroke-width="1.5" fill="none" opacity="0.7">
+    <ellipse cx="400" cy="250" rx="320" ry="180"/>
+    <ellipse cx="400" cy="250" rx="200" ry="110"/>
+    <line x1="80" y1="250" x2="720" y2="250"/>
+    <line x1="400" y1="70" x2="400" y2="430"/>
+  </g>
+  
+  <!-- Data nodes with accents -->
+  <circle cx="240" cy="200" r="7" fill="#1D4ED8"/>
+  <circle cx="240" cy="200" r="14" fill="none" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="240" y="235" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">EMEA Hub</text>
+  
+  <circle cx="560" cy="180" r="7" fill="#1D4ED8"/>
+  <circle cx="560" cy="180" r="14" fill="none" stroke="#1D4ED8" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="560" y="215" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">APAC Hub</text>
+
+  <circle cx="380" cy="320" r="8" fill="#C5A880"/>
+  <circle cx="380" cy="320" r="16" fill="none" stroke="#C5A880" stroke-width="1.5"/>
+  <text x="380" y="355" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="600">Americas Center</text>
+
+  <!-- Connecting trajectory -->
+  <path d="M 240 200 Q 340 140 560 180 Q 480 300 380 320 Z" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="5,5"/>
+  
+  <!-- Key Metric Badge -->
+  <g transform="translate(480, 360)">
+    <rect width="260" height="90" fill="#070E16" stroke="#1E334D" rx="4"/>
+    <text x="20" y="32" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" letter-spacing="1">SUPPLY NETWORK VELOCITY</text>
+    <text x="20" y="65" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="24" font-weight="700">+42.5%</text>
+    <text x="140" y="65" fill="#C5A880" font-family="system-ui, sans-serif" font-size="13">Turnaround</text>
+  </g>
+</svg>

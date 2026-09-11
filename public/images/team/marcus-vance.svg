@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" width="100%" height="100%">
+  <rect width="320" height="380" fill="#0B1622"/>
+  <circle cx="160" cy="140" r="65" fill="#1E334D"/>
+  <path d="M 60 340 C 60 250, 100 220, 160 220 C 220 220, 260 250, 260 340 Z" fill="#132235"/>
+  <circle cx="160" cy="135" r="48" fill="#C5A880"/>
+  <!-- Hair & suit -->
+  <path d="M 115 105 C 120 70, 200 70, 205 105 Z" fill="#070E16"/>
+  <path d="M 135 240 L 160 280 L 185 240 Z" fill="#FFFFFF"/>
+  <polygon points="156,275 164,275 162,340 158,340" fill="#C5A880"/>
+  <rect x="0" y="372" width="320" height="8" fill="#C5A880"/>
+</svg>

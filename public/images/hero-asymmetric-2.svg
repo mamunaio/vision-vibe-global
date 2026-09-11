@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroCardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111F30"/>
+      <stop offset="100%" stop-color="#0B1622"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#heroCardGrad2)"/>
+  
+  <!-- Corporate pillars diagram -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="160" width="60" height="100" fill="#1E334D" rx="2"/>
+    <rect x="90" y="120" width="60" height="140" fill="#2B4769" rx="2"/>
+    <rect x="180" y="80" width="60" height="180" fill="#1D4ED8" rx="2"/>
+    <rect x="270" y="40" width="60" height="220" fill="#1D4ED8" rx="2"/>
+    <rect x="360" y="0" width="60" height="260" fill="#C5A880" rx="2"/>
+    <line x1="0" y1="262" x2="480" y2="262" stroke="#1E334D" stroke-width="2"/>
+  </g>
+  
+  <text x="60" y="60" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" letter-spacing="1.5">CAPITAL REALLOCATION MATRIX</text>
+  <text x="60" y="360" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="500">Tier 1 Strategic Value Realization</text>
+</svg>

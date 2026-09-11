@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <rect width="400" height="260" fill="#F0F4F8"/>
+  <rect x="20" y="20" width="360" height="220" fill="#FFFFFF" stroke="#E2E8F0" rx="4"/>
+  <!-- People & Organization hierarchy graphic -->
+  <g transform="translate(60, 45)">
+    <!-- Top tier -->
+    <rect x="100" y="0" width="80" height="30" fill="#0B1622" rx="3"/>
+    <text x="140" y="19" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">Executive</text>
+
+    <line x1="140" y1="30" x2="140" y2="55" stroke="#CBD5E1" stroke-width="1.5"/>
+    <line x1="40" y1="55" x2="240" y2="55" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Mid tier -->
+    <line x1="40" y1="55" x2="40" y2="75" stroke="#CBD5E1" stroke-width="1.5"/>
+    <line x1="140" y1="55" x2="140" y2="75" stroke="#CBD5E1" stroke-width="1.5"/>
+    <line x1="240" y1="55" x2="240" y2="75" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <rect x="5" y="75" width="70" height="28" fill="#1D4ED8" rx="3"/>
+    <text x="40" y="93" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="9" font-weight="600" text-anchor="middle">Strategy Unit</text>
+
+    <rect x="105" y="75" width="70" height="28" fill="#1D4ED8" rx="3"/>
+    <text x="140" y="93" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="9" font-weight="600" text-anchor="middle">Operations</text>
+
+    <rect x="205" y="75" width="70" height="28" fill="#1D4ED8" rx="3"/>
+    <text x="240" y="93" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="9" font-weight="600" text-anchor="middle">Tech &amp; Data</text>
+
+    <!-- Cross functional matrix squad -->
+    <rect x="5" y="125" width="270" height="28" fill="#EFF6FF" stroke="#C5A880" stroke-width="1.5" rx="3"/>
+    <text x="140" y="143" fill="#0B1622" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">High-Impact Agile Squads</text>
+  </g>
+  <text x="200" y="220" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Target Operating Model &amp; Cultural Alignment</text>
+</svg>

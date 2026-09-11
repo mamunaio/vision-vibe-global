@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <rect width="400" height="260" fill="#F0F4F8"/>
+  <rect x="20" y="20" width="360" height="220" fill="#FFFFFF" stroke="#E2E8F0" rx="4"/>
+  <!-- Capital Allocation & M&A graphic -->
+  <g transform="translate(60, 60)">
+    <circle cx="100" cy="70" r="55" fill="none" stroke="#1D4ED8" stroke-width="20" stroke-dasharray="240 345"/>
+    <circle cx="100" cy="70" r="55" fill="none" stroke="#0B1622" stroke-width="20" stroke-dasharray="60 345" stroke-dashoffset="-240"/>
+    <circle cx="100" cy="70" r="55" fill="none" stroke="#C5A880" stroke-width="20" stroke-dasharray="45 345" stroke-dashoffset="-300"/>
+    
+    <g transform="translate(180, 25)">
+      <rect x="0" y="0" width="12" height="12" fill="#1D4ED8" rx="2"/>
+      <text x="20" y="10" fill="#111827" font-family="system-ui, sans-serif" font-size="11">Growth CapEx (65%)</text>
+
+      <rect x="0" y="25" width="12" height="12" fill="#0B1622" rx="2"/>
+      <text x="20" y="35" fill="#111827" font-family="system-ui, sans-serif" font-size="11">M&amp;A Integration (20%)</text>
+
+      <rect x="0" y="50" width="12" height="12" fill="#C5A880" rx="2"/>
+      <text x="20" y="60" fill="#111827" font-family="system-ui, sans-serif" font-size="11">Working Capital (15%)</text>
+    </g>
+  </g>
+  <text x="200" y="210" fill="#64748B" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Disciplined Capital Allocation &amp; Portfolio Realignment</text>
+</svg>

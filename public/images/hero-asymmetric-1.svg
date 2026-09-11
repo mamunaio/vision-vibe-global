@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroCardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1C2B"/>
+      <stop offset="100%" stop-color="#070E16"/>
+    </linearGradient>
+    <pattern id="gridPattern1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E334D" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#heroCardGrad1)"/>
+  <rect width="600" height="400" fill="url(#gridPattern1)"/>
+  
+  <!-- Architectural corporate diagram -->
+  <line x1="60" y1="320" x2="540" y2="320" stroke="#1E334D" stroke-width="1.5"/>
+  <line x1="60" y1="80" x2="60" y2="320" stroke="#1E334D" stroke-width="1.5"/>
+  
+  <!-- Trend line with accent blue -->
+  <polyline points="60,280 160,250 260,190 360,210 460,130 540,100" fill="none" stroke="#1D4ED8" stroke-width="3"/>
+  <circle cx="160" cy="250" r="4" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="2"/>
+  <circle cx="260" cy="190" r="4" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="2"/>
+  <circle cx="360" cy="210" r="4" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="2"/>
+  <circle cx="460" cy="130" r="4" fill="#FFFFFF" stroke="#1D4ED8" stroke-width="2"/>
+  <circle cx="540" cy="100" r="5" fill="#C5A880"/>
+
+  <!-- Minimalist matrix overlay -->
+  <rect x="380" y="70" width="160" height="80" fill="#132235" stroke="#2B4769" stroke-width="1" rx="4"/>
+  <text x="396" y="96" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11" letter-spacing="1">Q3 FORECAST</text>
+  <text x="396" y="126" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="600">+34.8%</text>
+  <text x="480" y="126" fill="#C5A880" font-family="system-ui, sans-serif" font-size="12">YOY</text>
+</svg>

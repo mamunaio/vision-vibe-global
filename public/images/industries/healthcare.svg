@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <rect width="400" height="240" fill="#0B1622"/>
+  <path d="M 60 100 L 120 100 L 140 60 L 160 140 L 180 80 L 200 110 L 220 100 L 340 100" fill="none" stroke="#1D4ED8" stroke-width="2.5"/>
+  <circle cx="140" cy="60" r="4" fill="#C5A880"/>
+  <circle cx="160" cy="140" r="4" fill="#2563EB"/>
+  <text x="40" y="205" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12" letter-spacing="1">HEALTHCARE &amp; LIFE SCIENCES</text>
+</svg>
