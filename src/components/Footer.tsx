@@ -79,19 +79,16 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Column 1: Brand & Headquarters */}
           <div className="col-span-2 md:col-span-4 lg:col-span-2 space-y-4">
-            <Link href="/" className="inline-flex items-center gap-3 group">
-              <div className="relative w-10 h-10 flex items-center justify-center shrink-0">
+            <Link href="/" className="inline-block group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded-md">
+              <div className="relative h-16 sm:h-20 w-auto max-w-[240px]">
                 <Image
-                  src="/images/logo-emblem.png"
-                  alt="Vision Vibe Global Official Logo"
-                  width={40}
-                  height={40}
-                  className="w-full h-full object-contain filter drop-shadow-[0_2px_8px_rgba(29,78,216,0.3)] group-hover:scale-105 transition-transform duration-200"
+                  src="/images/footer-logo.png"
+                  alt="Vision Vibe Global Official Brand"
+                  width={240}
+                  height={102}
+                  className="h-full w-auto object-contain filter drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)] group-hover:opacity-95 transition-opacity"
                 />
               </div>
-              <span className="font-display text-2xl font-extrabold tracking-tight text-white">
-                Vision Vibe <span className="text-accent-gold font-bold">Global</span>
-              </span>
             </Link>
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
               International physical commodities merchant trading house. Connecting resource producers with global industrial consumers through reliable ocean logistics, trade finance, and SGS-certified execution.
