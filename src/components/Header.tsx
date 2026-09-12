@@ -8,8 +8,6 @@ import {
   Menu,
   X,
   ArrowRight,
-  ShieldCheck,
-  PhoneCall,
   Lock,
   Layers,
   Ship,
@@ -53,57 +51,7 @@ export const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full font-sans transition-all duration-300">
-      {/* 1. Institutional Pre-Header Utility Bar */}
-      <div className="bg-navy-950/95 border-b border-navy-800/80 backdrop-blur text-[11px] text-slate-400 py-1.5 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Active Global Trading Desks Telemetry */}
-          <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 text-emerald-400 font-mono font-medium tracking-wide">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              DESKS ACTIVE
-            </span>
-            <span className="hidden sm:inline-block text-navy-700">|</span>
-            <div className="hidden sm:flex items-center gap-3 text-slate-400 font-mono text-[10.5px]">
-              <span className="hover:text-slate-200 transition-colors">
-                <strong className="text-slate-300">GENEVA</strong> UTC+2
-              </span>
-              <span>•</span>
-              <span className="hover:text-slate-200 transition-colors">
-                <strong className="text-slate-300">DUBAI</strong> UTC+4
-              </span>
-              <span>•</span>
-              <span className="hover:text-slate-200 transition-colors">
-                <strong className="text-slate-300">SINGAPORE</strong> UTC+8
-              </span>
-              <span>•</span>
-              <span className="hover:text-slate-200 transition-colors">
-                <strong className="text-slate-300">HOUSTON</strong> UTC-5
-              </span>
-            </div>
-          </div>
-
-          {/* Compliance & Execution Hotline */}
-          <div className="flex items-center gap-4 text-[10.5px]">
-            <span className="hidden md:inline-flex items-center gap-1 text-slate-400 font-mono">
-              <ShieldCheck className="w-3.5 h-3.5 text-accent-gold" />
-              GAFTA • FOSFA • LME Compliant
-            </span>
-            <span className="hidden md:inline-block text-navy-700">|</span>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-1 text-slate-300 hover:text-white transition-colors"
-            >
-              <PhoneCall className="w-3 h-3 text-brand-blue-light" />
-              <span className="font-mono">Direct Trade Desk</span>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* 2. Main Executive Navigation Bar */}
+      {/* Main Executive Navigation Bar */}
       <div
         className={`w-full transition-all duration-300 ${
           scrolled
@@ -228,23 +176,9 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* 3. Mobile Navigation Drawer */}
+      {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-navy-950/98 backdrop-blur-xl border-b border-navy-700/80 px-4 pt-3 pb-6 space-y-4 shadow-2xl animate-in slide-in-from-top-2 duration-200">
-          {/* Mobile Global Desk Status */}
-          <div className="p-3 bg-navy-900/80 border border-navy-800 rounded-lg text-xs space-y-1.5">
-            <div className="flex items-center justify-between text-slate-400 font-mono text-[11px]">
-              <span className="flex items-center gap-1.5 text-emerald-400">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                TRADING DESKS ACTIVE
-              </span>
-              <span>24/7 Global Desk</span>
-            </div>
-            <p className="text-[11px] text-slate-400 font-mono">
-              Geneva • Dubai • Singapore • Houston
-            </p>
-          </div>
-
           {/* Navigation Links */}
           <nav className="space-y-1" aria-label="Mobile Navigation">
             {navLinks.map((link) => {

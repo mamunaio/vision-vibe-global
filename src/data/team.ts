@@ -6,16 +6,27 @@ export interface TeamMember {
   credentials: string;
   bio: string;
   focusAreas: string[];
+  email?: string;
 }
 
 export const leadershipTeam: TeamMember[] = [
   {
+    name: "Promit Kumar Mondal",
+    role: "Founder & Managing Director",
+    practice: "Executive Leadership & Global Commodity Strategy",
+    image: "/images/team/promit-kumar-mondal.jpg",
+    credentials: "International Trade Operations & Strategic Commodity Sourcing",
+    bio: "As Founder & Managing Director, Promit Kumar Mondal spearheads Vision Vibe Global's multi-commodity merchant trading strategies, bilateral cross-border procurement frameworks, and strategic offtake contracts with international producers and institutional buyers.",
+    focusAreas: ["Global Commodity Sourcing", "Strategic Trade Offtakes", "Executive Risk Governance"],
+    email: "promit@visionvibeglobal.com"
+  },
+  {
     name: "Sarah Chen",
-    role: "Chief Executive Officer & Managing Director",
+    role: "Chief Operating Officer & Director",
     practice: "Global Sourcing & Executive Trading Desk",
     image: "/images/team/sarah-chen.jpg",
     credentials: "MBA, Stanford GSB | B.S. Industrial Engineering, MIT",
-    bio: "With over twenty years directing international physical trading operations, Sarah oversees Vision Vibe Global's multi-commodity portfolios, producer joint ventures, and strategic sovereign bilateral offtake contracts.",
+    bio: "With over twenty years directing international physical trading operations, Sarah oversees Vision Vibe Global's day-to-day multi-commodity portfolios, producer joint ventures, and strategic sovereign bilateral offtake contracts.",
     focusAreas: ["Global Commodity Sourcing", "Sovereign Supply Contracts", "Risk Governance"]
   },
   {

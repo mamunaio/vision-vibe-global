@@ -15,6 +15,7 @@ import {
   FileCheck,
   Scale,
   Globe2,
+  Mail,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -48,12 +49,12 @@ export default function AboutPage() {
   ];
 
   const hubs = [
-    { city: "London", region: "European HQ & Metals Desk", address: "100 Bishopsgate, Level 24, London EC2N 4AG" },
+    { city: "Dhaka", region: "Corporate HQ & Sourcing Operations", address: "GP Ga-36 Shahzadpur, Gulshan, Dhaka 1212, Bangladesh" },
+    { city: "London", region: "European Desk & Metals Operations", address: "100 Bishopsgate, Level 24, London EC2N 4AG" },
     { city: "Singapore", region: "Asia-Pacific Maritime & Energy Hub", address: "Marina Bay Financial Centre, Tower 3, Singapore" },
     { city: "Dubai", region: "Middle East & South Asia Desk", address: "DIFC Gate Precinct 4, Dubai, UAE" },
     { city: "Zurich", region: "Trade Finance & Credit Center", address: "Paradeplatz 8, 8001 Zürich, Switzerland" },
     { city: "Houston", region: "Americas Energy & Polymers Hub", address: "Energy Corridor, Houston, TX 77079, USA" },
-    { city: "Hong Kong", region: "Greater China & East Asia Trade Desk", address: "Two International Finance Centre, Central, Hong Kong" },
   ];
 
   return (
@@ -179,59 +180,84 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {leadershipTeam.map((member) => (
-              <div
-                key={member.name}
-                className="bg-white border border-line-light rounded-lg overflow-hidden shadow-sm hover:border-slate-400 transition-all duration-200 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="relative h-80 w-full bg-navy-900 overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover object-top hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6 space-y-3">
-                    <div>
-                      <h3 className="font-display text-xl font-bold text-ink-primary">
-                        {member.name}
-                      </h3>
-                      <p className="text-xs font-semibold uppercase tracking-wider text-brand-blue">
-                        {member.role}
-                      </p>
-                      <p className="text-xs text-slate-500 mt-0.5">
-                        {member.practice}
-                      </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {leadershipTeam.map((member, index) => {
+              const isFounder = member.role.includes("Founder");
+              return (
+                <div
+                  key={member.name}
+                  className={`bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between ${
+                    isFounder
+                      ? "border-brand-blue/40 ring-1 ring-brand-blue/20"
+                      : "border-line-light hover:border-slate-400"
+                  }`}
+                >
+                  <div>
+                    <div className="relative h-80 w-full bg-navy-900 overflow-hidden">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        priority={index === 0}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
+                    <div className="p-6 space-y-3">
+                      <div>
+                        {isFounder && (
+                          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[10px] font-mono font-semibold uppercase tracking-wider bg-brand-blue/10 text-brand-blue border border-brand-blue/25 mb-2.5">
+                            Executive Founder
+                          </span>
+                        )}
+                        <h3 className="font-display text-xl font-bold text-ink-primary">
+                          {member.name}
+                        </h3>
+                        <p className="text-xs font-semibold uppercase tracking-wider text-brand-blue">
+                          {member.role}
+                        </p>
+                        <p className="text-xs text-slate-500 mt-0.5">
+                          {member.practice}
+                        </p>
+                      </div>
 
-                    <p className="text-xs font-medium text-slate-400 border-t border-slate-100 pt-2">
-                      {member.credentials}
-                    </p>
+                      <p className="text-xs font-medium text-slate-400 border-t border-slate-100 pt-2">
+                        {member.credentials}
+                      </p>
 
-                    <p className="text-xs text-ink-muted leading-relaxed">
-                      {member.bio}
-                    </p>
+                      <p className="text-xs text-ink-muted leading-relaxed">
+                        {member.bio}
+                      </p>
+
+                      {member.email && (
+                        <div className="pt-2 border-t border-slate-100">
+                          <a
+                            href={`mailto:${member.email}`}
+                            className="inline-flex items-center gap-1.5 text-xs text-brand-blue hover:underline font-mono"
+                          >
+                            <Mail className="w-3.5 h-3.5 flex-shrink-0" />
+                            <span>{member.email}</span>
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="px-6 pb-6 pt-2">
+                    <div className="flex flex-wrap gap-1.5">
+                      {member.focusAreas.map((area, fIdx) => (
+                        <span
+                          key={fIdx}
+                          className="text-[10px] uppercase font-semibold px-2 py-0.5 bg-slate-100 text-slate-600 rounded"
+                        >
+                          {area}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-
-                <div className="px-6 pb-6 pt-2">
-                  <div className="flex flex-wrap gap-1.5">
-                    {member.focusAreas.map((area, fIdx) => (
-                      <span
-                        key={fIdx}
-                        className="text-[10px] uppercase font-semibold px-2 py-0.5 bg-slate-100 text-slate-600 rounded"
-                      >
-                        {area}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

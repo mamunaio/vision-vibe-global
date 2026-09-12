@@ -13,28 +13,28 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   const offices = [
     {
-      city: "London (European HQ & Metals Desk)",
-      address: "100 Bishopsgate, Level 24, London EC2N 4AG, United Kingdom",
-      phone: "+44 (0) 20 3889 7100",
-      email: "metals@visionvibeglobal.com",
+      city: "Dhaka, Bangladesh (Corporate HQ & Executive Desk)",
+      address: "GP Ga-36 Shahzadpur, Gulshan, Dhaka 1212, Bangladesh",
+      phone: "+8801841-841107",
+      email: "promit@visionvibeglobal.com",
+    },
+    {
+      city: "Kuala Lumpur, Malaysia (Southeast Asia Desk)",
+      address: "Kuala Lumpur, Malaysia",
+      phone: "+60 11-6432 7651",
+      email: "info@visionvibeglobal.com",
     },
     {
       city: "Singapore (APAC Maritime & Energy Hub)",
       address: "Marina Bay Financial Centre, Tower 3, Level 38, Singapore 018982",
-      phone: "+65 6829 7300",
-      email: "singapore@visionvibeglobal.com",
+      phone: "+60 11-6432 7651",
+      email: "info@visionvibeglobal.com",
     },
     {
-      city: "Dubai (Middle East & Agri Desk)",
-      address: "DIFC Gate Precinct 4, Level 7, Dubai, UAE",
-      phone: "+971 4 428 9200",
-      email: "agri@visionvibeglobal.com",
-    },
-    {
-      city: "Houston (Americas Energy & Polymers)",
-      address: "Energy Corridor, Two Westlake Park, Houston, TX 77079, USA",
-      phone: "+1 (713) 821-4900",
-      email: "energy@visionvibeglobal.com",
+      city: "London (European HQ & Metals Desk)",
+      address: "100 Bishopsgate, Level 24, London EC2N 4AG, United Kingdom",
+      phone: "+8801841-841107",
+      email: "info@visionvibeglobal.com",
     },
   ];
 
@@ -81,18 +81,20 @@ export default function ContactPage() {
                       <span className="text-xs font-semibold uppercase tracking-wider text-ink-primary block">
                         Central Commercial Inquiries
                       </span>
-                      <div className="flex flex-col gap-0.5">
+                      <div className="flex flex-col gap-1 mt-0.5">
                         <a
-                          href="mailto:trade@visionvibeglobal.com"
-                          className="text-brand-blue hover:underline font-mono text-xs"
+                          href="mailto:info@visionvibeglobal.com"
+                          className="text-brand-blue hover:underline font-mono text-xs flex items-center gap-1.5"
                         >
-                          trade@visionvibeglobal.com
+                          <span className="text-[10px] font-semibold px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded font-sans">Corporate</span>
+                          <span>info@visionvibeglobal.com</span>
                         </a>
                         <a
-                          href="mailto:mamunahmed24.ma@gmail.com"
-                          className="text-brand-blue hover:underline font-mono text-xs"
+                          href="mailto:promit@visionvibeglobal.com"
+                          className="text-brand-blue hover:underline font-mono text-xs flex items-center gap-1.5"
                         >
-                          mamunahmed24.ma@gmail.com
+                          <span className="text-[10px] font-semibold px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded font-sans">Direct Desk</span>
+                          <span>promit@visionvibeglobal.com</span>
                         </a>
                       </div>
                     </div>
@@ -132,9 +134,24 @@ export default function ContactPage() {
                     <Phone className="w-4 h-4 text-brand-blue flex-shrink-0 mt-1" />
                     <div>
                       <span className="text-xs font-semibold uppercase tracking-wider text-ink-primary block">
-                        Global Trading Switchboard
+                        Direct Desk &amp; Commercial Contacts
                       </span>
-                      <span className="text-ink-primary font-mono text-xs">+44 (0) 20 3889 7100</span>
+                      <div className="flex flex-col gap-1 mt-1">
+                        <a
+                          href="tel:+8801841841107"
+                          className="text-brand-blue hover:underline font-mono text-xs flex items-center gap-1.5"
+                        >
+                          <span className="text-[10px] font-semibold px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded font-sans">BD</span>
+                          <span>+8801841-841107</span>
+                        </a>
+                        <a
+                          href="tel:+601164327651"
+                          className="text-brand-blue hover:underline font-mono text-xs flex items-center gap-1.5"
+                        >
+                          <span className="text-[10px] font-semibold px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded font-sans">MY</span>
+                          <span>+60 11-6432 7651</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -203,7 +220,12 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2.5">
                     <Phone className="w-4 h-4 text-brand-blue flex-shrink-0" />
-                    <span className="font-mono">{office.phone}</span>
+                    <a
+                      href={`tel:${office.phone.replace(/[^+\d]/g, "")}`}
+                      className="font-mono hover:text-brand-blue hover:underline transition-colors"
+                    >
+                      {office.phone}
+                    </a>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <Mail className="w-4 h-4 text-brand-blue flex-shrink-0" />

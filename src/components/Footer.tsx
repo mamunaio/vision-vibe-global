@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Globe, ArrowRight, ShieldCheck, Mail, MapPin, CheckCircle2 } from "lucide-react";
+import { Globe, ArrowRight, ShieldCheck, Mail, MapPin, CheckCircle2, Phone } from "lucide-react";
 
 export const Footer: React.FC = () => {
   const [subscribed, setSubscribed] = useState(false);
@@ -95,8 +95,42 @@ export const Footer: React.FC = () => {
             </p>
             <div className="pt-2 flex flex-col space-y-2 text-xs text-slate-400">
               <div className="flex items-center gap-2">
-                <MapPin className="w-3.5 h-3.5 text-accent-gold flex-shrink-0" />
-                <span>Trade Desks: London • Singapore • Dubai • Zurich • Houston • Tokyo</span>
+                <Mail className="w-3.5 h-3.5 text-brand-blue flex-shrink-0" />
+                <div className="flex flex-wrap items-center gap-2 font-mono text-slate-300">
+                  <a
+                    href="mailto:info@visionvibeglobal.com"
+                    className="hover:text-white transition-colors"
+                  >
+                    info@visionvibeglobal.com
+                  </a>
+                  <span className="text-slate-600">|</span>
+                  <a
+                    href="mailto:promit@visionvibeglobal.com"
+                    className="hover:text-white transition-colors"
+                  >
+                    promit@visionvibeglobal.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+                <div className="flex items-center gap-2 font-mono text-slate-300">
+                  <a href="tel:+8801841841107" className="hover:text-white transition-colors">
+                    +8801841-841107
+                  </a>
+                  <span className="text-slate-600">|</span>
+                  <a href="tel:+601164327651" className="hover:text-white transition-colors">
+                    +60 11-6432 7651
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start gap-2">
+                <MapPin className="w-3.5 h-3.5 text-accent-gold flex-shrink-0 mt-0.5" />
+                <span>GP Ga-36 Shahzadpur, Gulshan, Dhaka 1212, Bangladesh</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Globe className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
+                <span>Trade Desks: Dhaka • Kuala Lumpur • Singapore • London • Dubai</span>
               </div>
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-blue flex-shrink-0" />

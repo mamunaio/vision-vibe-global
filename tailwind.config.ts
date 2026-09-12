@@ -46,9 +46,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-display)", "Plus Jakarta Sans", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
-        heading: ["var(--font-display)", "Plus Jakarta Sans", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
-        sans: ["var(--font-sans)", "Manrope", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        display: ["var(--font-display)", "Plus Jakarta Sans", "Hind Siliguri", "Kalpurush", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        heading: ["var(--font-display)", "Plus Jakarta Sans", "Hind Siliguri", "Kalpurush", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        sans: ["var(--font-sans)", "Manrope", "Hind Siliguri", "Kalpurush", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
         mono: ["var(--font-mono)", "JetBrains Mono", "ui-monospace", "SFMono-Regular", "monospace"],
         serif: ["var(--font-display)", "Plus Jakarta Sans", "system-ui", "sans-serif"],
       },

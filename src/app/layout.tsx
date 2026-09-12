@@ -70,7 +70,7 @@ export default function RootLayout({
       lang="en"
       className={`${plusJakarta.variable} ${manrope.variable} ${jetbrainsMono.variable} h-full`}
     >
-      <body className="flex min-h-full flex-col bg-navy-900 text-ink-primary antialiased">
+      <body className="flex min-h-full flex-col bg-navy-900 text-slate-100 antialiased">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

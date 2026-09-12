@@ -136,7 +136,7 @@ export default async function LegalDetailPage({ params }: Props) {
                     <span>compliance@visionvibeglobal.com</span>
                   </a>
                   <div className="text-slate-400">
-                    London HQ: 100 Bishopsgate, Level 24
+                    Corporate HQ: GP Ga-36 Shahzadpur, Gulshan, Dhaka 1212
                   </div>
                 </div>
               </div>
