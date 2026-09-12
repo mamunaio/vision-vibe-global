@@ -166,7 +166,7 @@ export default function ServicesPage() {
         title="Request commodity allocation or vessel laycan availability."
         subtitle="Our commodity desk directors are available for structured commercial discussions and indicative price quotes."
         primaryBtnText="Submit Commercial RFQ"
-        primaryBtnHref="/contact"
+        primaryBtnHref="/rfq"
       />
     </div>
   );

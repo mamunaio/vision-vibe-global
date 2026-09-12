@@ -127,7 +127,7 @@ export default function IndustriesPage() {
         title="Request spot or annual contract allocations."
         subtitle="Our international trading desks issue Soft Corporate Offers (SCO) with verified chemical assay specs and vessel laycans upon receipt of an official RFQ."
         primaryBtnText="Submit Commercial RFQ"
-        primaryBtnHref="/contact"
+        primaryBtnHref="/rfq"
       />
     </div>
   );

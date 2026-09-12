@@ -227,7 +227,7 @@ export default async function InsightDetailPage({ params }: Props) {
         title="Discuss physical trade volumes with our trading desk."
         subtitle="Our commodity desk directors and chartering officers are available to review delivery laycans, pricing formulas, and payment instruments."
         primaryBtnText="Submit Commercial RFQ"
-        primaryBtnHref="/contact"
+        primaryBtnHref="/rfq"
       />
     </div>
   );

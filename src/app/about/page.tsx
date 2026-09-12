@@ -3,18 +3,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import SectionLabel from "@/components/SectionLabel";
 import Button from "@/components/Button";
-import Card from "@/components/Card";
 import StatsBand from "@/components/StatsBand";
 import CTASection from "@/components/CTASection";
 import { leadershipTeam } from "@/data/team";
 import {
-  ShieldCheck,
-  Target,
-  Users,
   Ship,
   FileCheck,
   Scale,
-  Globe2,
   Mail,
 } from "lucide-react";
 
@@ -303,7 +298,7 @@ export default function AboutPage() {
         title="Explore bilateral trade agreements with our desks."
         subtitle="We welcome confidential inquiries from qualified buyers, state procurement bodies, and tier-1 industrial consumers."
         primaryBtnText="Submit Commercial RFQ"
-        primaryBtnHref="/contact"
+        primaryBtnHref="/rfq"
       />
     </div>
   );

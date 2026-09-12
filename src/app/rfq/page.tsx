@@ -63,6 +63,40 @@ export default function RFQPage() {
                     <Mail className="w-4 h-4 text-brand-blue flex-shrink-0 mt-0.5" />
                     <div>
                       <span className="font-semibold text-ink-primary block uppercase tracking-wider text-[11px]">
+                        Corporate &amp; Executive Desk
+                      </span>
+                      <div className="flex flex-col gap-0.5 mt-0.5">
+                        <a href="mailto:info@visionvibeglobal.com" className="text-brand-blue font-mono hover:underline">
+                          info@visionvibeglobal.com
+                        </a>
+                        <a href="mailto:promit@visionvibeglobal.com" className="text-brand-blue font-mono hover:underline">
+                          promit@visionvibeglobal.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Phone className="w-4 h-4 text-brand-blue flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-ink-primary block uppercase tracking-wider text-[11px]">
+                        Trading Desk Telephones
+                      </span>
+                      <div className="flex flex-col gap-0.5 mt-0.5 font-mono">
+                        <a href="tel:+8801841841107" className="text-brand-blue hover:underline">
+                          +8801841-841107 <span className="text-[10px] text-slate-500 font-sans">(BD)</span>
+                        </a>
+                        <a href="tel:+601164327651" className="text-brand-blue hover:underline">
+                          +60 11-6432 7651 <span className="text-[10px] text-slate-500 font-sans">(MY)</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Mail className="w-4 h-4 text-brand-blue flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-ink-primary block uppercase tracking-wider text-[11px]">
                         Energy &amp; Refined Products Desk
                       </span>
                       <a href="mailto:energy@visionvibeglobal.com" className="text-brand-blue font-mono hover:underline">

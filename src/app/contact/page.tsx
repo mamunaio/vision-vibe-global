@@ -229,7 +229,12 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2.5">
                     <Mail className="w-4 h-4 text-brand-blue flex-shrink-0" />
-                    <span className="text-brand-blue font-mono">{office.email}</span>
+                    <a
+                      href={`mailto:${office.email}`}
+                      className="text-brand-blue font-mono hover:underline transition-colors"
+                    >
+                      {office.email}
+                    </a>
                   </div>
                 </div>
               </div>

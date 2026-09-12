@@ -260,7 +260,7 @@ export default async function ServiceDetailPage({ params }: Props) {
         title={`Inquire about our ${service.title}.`}
         subtitle="Connect with our desk directors to review physical allocations, indicative pricing, and discharge windows."
         primaryBtnText="Submit Commercial RFQ"
-        primaryBtnHref="/contact"
+        primaryBtnHref="/rfq"
       />
     </div>
   );
